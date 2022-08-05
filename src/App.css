@@ -1,38 +1,68 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  padding: 50px 10vw;
+  background-color: #e8f3ff;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: url("https://images.pling.com/img/00/00/62/69/92/1719794/minimalist-desktop-11.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  color: #063466;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-heading {
+  font-weight: normal;
+  margin-bottom: 30px;
+  color: #063466;
+}
+
+.add-button {
+  position: absolute;
+  top: 50px;
+  right: 10vw;
+}
+
+.card-container {
+  margin-bottom: 20px;
+}
+
+.card-container > .card {
+  padding: 10px;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card > .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 9px;
+  border-bottom: solid 2px #ccc;
+  color: #063466;
+}
+
+.schedule {
+  --bs-gutter-x: 0 !important;
+  margin-bottom: 4px;
+}
+.schedule:not(:last-child) {
+  border-bottom: solid 1px #ccc;
+}
+
+.price-tag {
+  text-align: right;
+}
+
+.schedule > .property {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card > .total {
+  --bs-gutter-x: 0 !important;
+  font-weight: 600;
+  margin-top: 9px;
+  border-top: solid 2px #ccc;
 }
